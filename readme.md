@@ -1,14 +1,13 @@
 Cookies
 ========
 
-##A light weight vanilla JavaScript plugin to set, get and remove cookies. 
-#### It does all the heavy lifting so you don't have too.
+## It does all the heavy lifting so you don't have too.
 
-####What is Cookies.js?
-Cookies.js is dependency free plugin that remembers information about a user. When a user visits a wab page, Cookies.js can store data about that user.  
+##What is Cookies.js?
+A light weight vanilla JavaScript plugin to set, get and remove cookies. 
 
 ####How Cookies Works
-The plugin works by setting, storing and removing 
+Cookies.js is dependency free plugin that remembers information about a user. When a user visits a wab page Cookies.js can store data about that user.
 
 ####Parameters
 | Parameter        | Default           | Definition  |
