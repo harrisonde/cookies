@@ -1,11 +1,25 @@
 Cookies
 ========
 
-##A lightweight vanilla JavaScript plugin to set, get and remove cookies. It does all the heavy lifting so you don't have too.
+##A light weight vanilla JavaScript plugin to set, get and remove cookies. 
+#### It does all the heavy lifting so you don't have too.
 
-###Set Cookie
+####What is Cookies.js?
+Cookies.js is dependency free plugin that remembers information about a user. When a user visits a wab page, Cookies.js can store data about that user.  
 
-####You can set yourself a cookie with setCookie(). You will need to provide the following arguments:
+####How Cookies Works
+The plugin works by setting, storing and removing 
+
+####Parameters
+| Parameter        | Default           | Definition  |
+| :-------------: |:-------------:| :-----:|
+| cname  | null | name of the cookie |
+| cvalue | null | value of the cookie  |
+| exdays | null | number of days until expiration or 'session' to set in-memory / transient cookie   |
+
+####Set Cookie
+
+#####You can set yourself a cookie with setCookie(). You will need to provide the following arguments:
 
 	1.	cname - name of the cookie
 	2.	cvalue - the value of the cookie
@@ -16,7 +30,7 @@ Cookies
 	setCookie('asweetcookie','chocolate','2');
 ```
 
-###Get Cookie
+####Get Cookie
 
 You can get a cookie with getCookie(). You will need to provide the following arguments to get your cookie:
 
@@ -27,7 +41,7 @@ You can get a cookie with getCookie(). You will need to provide the following ar
 	getCookie('asweetcookie');
 ```
 
-###Remove Cookie
+####Remove Cookie
 
 You can remove a cookie with removeCookie(). You will need to provide the following arguments:
 
@@ -38,6 +52,6 @@ You can remove a cookie with removeCookie(). You will need to provide the follow
 	removeCookie('asweetcookie');
 ```
 
-###Error Handling
+####Error Handling
 
 At any point in time if you call a function and receive a non-zero return, you have yourself an error. Sad day. If you'd like to learn more about the erros, take at window.unbakedCookies. This variable is a neat little object to tell you what has gone wrong. It provides the function name where the error occurred, a human readable error message, and numerical error message.
