@@ -16,19 +16,37 @@ function setCookie(cname, cvalue, exdays)
 {	
 	try
 	{
-		// Get current date
-		var d = new Date();
+		var cookie, expires;
 		
-		// Get current time
-		d.setTime(d.getTime()+(exdays*24*60*60*1000));
+		// in-memory cookie or transient cookie
+		if(exdays == 'session')
+		{
+	
+			// Create cookie
+			cookie = cname + "=" + cvalue + "; ";
 		
-		// number of days before the cooke expires converted to string
-		var expires = "expires="+d.toGMTString();
+		}
+		else
+		{	
+			// Get current date
+			var d = new Date();
+		
+			// Get current time
+			d.setTime(d.getTime()+(exdays*24*60*60*1000));
+		
+			// number of days before the cooke expires converted to string
+			expires = "expires="+d.toGMTString();
+			
+			// Create cookie
+			cookie = cname + "=" + cvalue + "; " + expires;
+			
+		}
 		
 		// Set the cookie
-		document.cookie = cname + "=" + cvalue + "; " + expires;
+		document.cookie = cookie;
 		
 		return 0;
+		
 	}	
 	catch(error)
 	{
