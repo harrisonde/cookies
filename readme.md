@@ -1,7 +1,7 @@
 Cookies
 ========
 
-##A lightweight vanilla javascript plugin to set, get and remove cookies. It does all the heavylifting so you don't have too.
+##A lightweight vanilla JavaScript plugin to set, get and remove cookies. It does all the heavy lifting so you don't have too.
 
 ###Set Cookie
 
@@ -9,9 +9,10 @@ Cookies
 
 	1.	cname - name of the cookie
 	2.	cvalue - the value of the cookie
-	3.	exdays - expiration date
+	3.	exdays - expiration date in days
 
 ```html
+	// Set a new cookie with arguments
 	setCookie('asweetcookie','chocolate','2');
 ```
 
@@ -22,6 +23,7 @@ You can get a cookie with getCookie(). You will need to provide the following ar
 	1.	cname
 
 ```html
+	// Gat a cookie with arguments
 	getCookie('asweetcookie');
 ```
 
@@ -32,11 +34,10 @@ You can remove a cookie with removeCookie(). You will need to provide the follow
 	1.	cname
 
 ```html
-removeCookie('asweetcookie');
+	// Remove a cookie with arguments
+	removeCookie('asweetcookie');
 ```
 
 ###Error Handling
 
-At any point in time if you call a function and receive a non-zero return, you have yourself an error. You can take a look at the global scope for error details.
-
-	1.	unbakedCookies - An error object to tell you what has gone wrong. Provides function that caused the error, human readable message, and numerical error message.
+At any point in time if you call a function and receive a non-zero return, you have yourself an error. Sad day. If you'd like to learn more about the erros, take at window.unbakedCookies. This variable is a neat little object to tell you what has gone wrong. It provides the function name where the error occurred, a human readable error message, and numerical error message.
