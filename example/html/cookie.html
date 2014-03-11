@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cookies</title>
+<script src="../js/cookie.js" type="text/javascript"></script>
+</head>
+<body>
+<h1>Example of get, set, and remove cookies.</h1>
+<h2>Set Cookie</h2>
+<p>You can set yourself a cookie with setCookie(). You will need to provide the following arguments:</p>
+	<ul>
+		<li>cname - name of the cookie</li>
+		<li>cvalue - the value of the cookie</li>
+		<li>exdays - expiration date. Set to session if you'd like the cookie to be removed when browser is closed</li>
+	</ul>
+	<p>setCookie('asweetcookie','chocolate','2');</p>
+<h2>Get Cookie</h2>
+<p>You can get a cookie with getCookie(). You will need to provide the following arguments to get your cookie:</p>
+	<ul>
+		<li>cname</li>
+	</ul>
+	<p>getCookie('asweetcookie');</p>
+<h2>Remove Cookie</h2>
+<p>You can remove a cookie with removeCookie(). You will need to provide the following arguments:</p>
+	<ul>
+		<li>cname</li>
+	</ul>
+	<p>removeCookie('asweetcookie');</p>	
+<h2>Error Handling</h2>
+<p>At any point in time if you call a function and receive a non-zero return, you have yourself an error. Sad day. If you'd like to learn more about the error, take at window.unbakedCookies. This variable is a neat little object to tell you what has gone wrong. It provides the function name where the error occurred, a human readable error message, and numerical error message.</p>
+<p> Example of error<br/>
+	<img src="../img/unbakedCookies.png" alt="unbakedCookies" width="349" height="189">
+</p>
+</body>
+</html>

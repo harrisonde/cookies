@@ -7,7 +7,7 @@ Cookies
 A light weight vanilla JavaScript plugin to set, get and remove cookies. 
 
 ####How Cookies Works
-Cookies.js is dependency free plugin that remembers information about a user. When a user visits a wab page Cookies.js can store data about that user.
+Cookies.js is dependency free plugin that remembers information about a user. When a user visits a web page Cookies.js can store data about that user.
 
 ####Parameters
 | Parameter        | Default           | Definition  |
@@ -36,7 +36,7 @@ You can get a cookie with getCookie(). You will need to provide the following ar
 	1.	cname
 
 ```html
-	// Gat a cookie with arguments
+	// Get a cookie with arguments
 	getCookie('asweetcookie');
 ```
 
@@ -52,5 +52,5 @@ You can remove a cookie with removeCookie(). You will need to provide the follow
 ```
 
 ####Error Handling
-
-At any point in time if you call a function and receive a non-zero return, you have yourself an error. Sad day. If you'd like to learn more about the erros, take at window.unbakedCookies. This variable is a neat little object to tell you what has gone wrong. It provides the function name where the error occurred, a human readable error message, and numerical error message.
+At any point in time if you call a function and receive a non-zero return, you have yourself an error. Sad day. If you'd like to learn more about the error, take at window.unbakedCookies. This variable is a neat little object to tell you what has gone wrong. It provides the function name where the error occurred, a human readable error message, and numerical error message.
+![Example of error](../img/unbakedCookies.png "Console Error")
