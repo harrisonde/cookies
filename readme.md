@@ -52,6 +52,6 @@ You can remove a cookie with removeCookie(). You will need to provide the follow
 ```
 
 ####Error Handling
-At any point in time if you call a function and receive a non-zero return, you have yourself an error. Sad day. If you'd like to learn more about the error, take at window.unbakedCookies in the console. This variable is a neat little object to tell you what has gone wrong. It provides the function name where the error occurred, a human readable error message, and numerical error message.</><p>
+At any point in time if you call a function and receive a non-zero return, you have yourself an error. Sad day. If you'd like to learn more about the error, take at window.unbakedCookies in the console. This variable is a neat little object to tell you what has gone wrong. It provides the function name where the error occurred, a human readable error message, and numerical error message.
+
 ![Example of unbakedCookies in the console.](example/img/unbakedCookies.png "Console Error")
-</p>
