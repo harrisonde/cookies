@@ -38,7 +38,7 @@ function setCookie(cname, cvalue, exdays)
 			expires = "expires="+d.toGMTString();
 			
 			// Create cookie
-			cookie = cname + "=" + cvalue + "; " + expires;
+			cookie = cname + "=" + cvalue + "; " + expires + "; path=/";
 			
 		}
 		
